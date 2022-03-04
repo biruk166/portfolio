@@ -1,2 +1,2 @@
 # Portfolio
-This is my peroneal portfolio website built with React.js and Node.js including other JavaScript libraries. 
+This is my personal portfolio website built with React.js, Node.js and including other JavaScript libraries. 
