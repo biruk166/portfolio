@@ -1,0 +1,13 @@
+.allbutton{
+    max-width: 15rem;
+    min-height: 5rem;
+    font-size: 2.5em;
+    padding: 0 .7em;
+    border: black solid .2rem;
+    border-radius: 3rem;
+
+    cursor: pointer;
+    font-family: var(--font-pri);
+    color: var(--color-txt-pri);
+    background-color: var(--color-txt-sec);
+}
