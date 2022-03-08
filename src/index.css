@@ -1,13 +1,23 @@
-body {
+html{
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: 62.5%;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
+:root{
+  /* ###################### COLOR AND FONTS ################# */
+  --color-bg: #28A982;
+  --color-pri: #13519F;
+  --color-sec: #0B0934;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  /* #### text color ### */
+  --color-txt-pri: #ffe602;
+  --color-txt-sec: #13519f;
+  --color-txt-white: white;
+
+  /* #### FONT  ####*/
+  --font-pri: 'Pacifico', cursive;
+  --font-sec: font-family: 'Oxanium', cursive;
 }

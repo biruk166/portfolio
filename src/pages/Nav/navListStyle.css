@@ -1,0 +1,23 @@
+.nav-list-items, 
+.nav-list-items ul, 
+.nav-list-items li{
+    background-color: transparent;
+}
+.nav-list-items  li{
+    font-size: 4rem;
+    padding: .2rem 0;
+
+    cursor: pointer;
+    list-style: none;
+    font-family: var(--font-pri);
+    color: var(--color-sec);
+}
+.nav-list-items ul{
+    max-width: 60%;
+    margin: auto;
+    
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+}
