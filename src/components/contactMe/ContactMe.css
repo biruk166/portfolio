@@ -1,0 +1,92 @@
+.contact-me-container{
+    display: flex;
+    gap: .5rem;
+}
+
+.social{
+    background-color: var(--orangeColor);
+    width: 3rem;
+    border-radius: 2rem;
+    border: .1rem solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.social > a{
+    background-color: transparent;
+    padding: 0 1rem;
+    padding-top: .2rem;
+}
+
+.social > a:focus{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 40%), rgba(255, 255, 255, 10%));
+    background-color: var(--bgColor);
+}
+.contact-me-email-form{
+    border: .1rem solid transparent;
+    border-radius: .1rem;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 40%), rgba(255, 255, 255, 10%));
+    width: 90%;
+    height: max-content;
+    padding: .5rem 0;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.success{
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 40%), rgba(255, 255, 255, 10%));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: .5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scaleX(1);
+}
+
+.success textarea{
+    width: 95%;
+    background-color: transparent;
+    border: .1rem solid white;
+}
+
+.text-box,
+.input-container{
+    width: 90%;
+}
+.user-input{
+    width: 95%;
+    height: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: .1rem solid white;
+}
+
+.success textarea,
+.text-box textarea,
+.user-input{
+    color: white;
+    font-size: large;
+    outline: none;
+}
+
+.text-box textarea{
+    width: 95%;
+    height: 5rem;
+    z-index: 2;
+    background-color: transparent;
+    border: .1rem solid white;
+}

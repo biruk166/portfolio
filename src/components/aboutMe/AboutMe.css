@@ -1,0 +1,42 @@
+.about-me-main-container{
+    display: grid;
+    gap: .7rem;
+    grid-auto-columns: 1fr;
+    grid-template-areas: 'one two two'
+                          'one two two'
+                          'one two two'
+                          'one two two'
+                           'one three three'
+                            'four four four';
+    border-radius: .1rem ;
+    background-color: var(--cardColor);
+    width: 90%;
+    height: 20rem;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.box-one,
+.box-two,
+.box-four{
+    border: .1rem white solid;
+    background-color: #131D74;
+}
+
+.box-three{
+    border: .1rem white solid;
+    background-color: var(--orangeColor);
+}
+
+.box-one{
+    grid-area: one;
+}
+.box-two{
+    grid-area: two;
+}
+.box-three{
+    grid-area: three;
+}
+.box-four{
+    grid-area: four;
+}

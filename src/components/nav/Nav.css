@@ -1,0 +1,135 @@
+
+.nav-container{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 40%);
+    padding: 1rem 0;
+    border-radius: var(--borderRadiusBig);
+    overflow: hidden;
+}
+
+
+.menu,
+.cancel-menu{
+    display: none;
+    position: absolute;
+    top: .4rem;
+    left: .7rem;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.nav-item > a{
+    font-family: var(--fontFamily);
+}
+.nav-item{
+    position: relative;
+    background-color: transparent;
+    z-index: 10;
+}
+
+.button-nav{
+    position: relative;
+    display: flex;
+}
+
+.duck{
+    display: none;
+    position: absolute;
+    width: 4.5rem;
+
+    top: -5.7rem;
+    left: 1.3rem;
+}
+
+.nav-item-style::before{
+    content: ' ';
+    position: absolute;
+    top: -2rem;
+    bottom: -2rem;
+    right: -.5rem;
+    left: -.5rem;
+    background-color: transparent;
+    z-index: -1;
+    border-radius: 0;
+    transform: scale(.1);
+}
+
+.nav-item-style:hover::before{
+    background-color: var(--orangeColor);
+    box-shadow: -.1rem 0 .5rem black, .1rem 0 .5rem black;
+    transform: scale(1);
+    transition: transform 100ms;
+}
+
+@media (max-width:850px) {
+    .menu{
+        display: block;
+    }
+
+    /* Logic to close the menu item  and diplay the menu icon*/
+    .cancel-menu:focus ~ .nav-container{
+       display: none;
+    }
+    .cancel-menu:focus{
+        display: none;
+    }
+    
+    /* Logic to display the nav item and hide the menu-icon*/
+    .menu:focus{
+        display: none;
+    }
+    .menu:focus ~ .cancel-menu{
+        display: block;
+    }
+    .menu:focus ~ .nav-container{
+        display: flex
+    }
+    /* Keeps the nav container visible as long as user is inside the container */
+    .nav-main-container:focus-within .nav-container{
+        display: flex;
+    }
+    /* Hides the menu icon as long as the user is inside the container */
+    .nav-main-container:focus-within .menu{
+        display: none;
+    }
+    /* Keeps the cancel icon visible as long as user is inside the container */
+    .nav-main-container:focus-within .cancel-menu{
+        display: block;
+    }
+    
+    .nav-container{
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 40%), rgba(255, 255, 255, 10%));
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        padding: 3rem 2.5rem 1.5rem;
+        border-radius: 1rem .5rem 10rem .5rem;
+
+        position: absolute;
+        top: 0;
+        bottom: 40%;
+        right: 30%;
+        left: 0;
+        z-index: 4;
+    }
+
+    .duck{
+        display: block;
+    }
+    .button-nav{
+        margin-top: 5rem;
+        margin-left: 15%;
+    }
+
+    .nav-item-style::before{
+        top: -1.2rem;
+        bottom: -1.2rem;
+        right: -50rem;
+        left: -5rem;
+    }
+}

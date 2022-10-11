@@ -1,0 +1,30 @@
+.app{
+    position: relative;
+    border: .1rem transparent solid;
+    border-top: transparent;
+    height: 100vh;
+    margin: auto;
+    padding: .5rem;
+}
+
+@media (max-width:850px){
+    .nav-bar{
+        border: .1rem transparent solid;
+        background-color: var(--bgColor);
+        height: 2rem;
+        margin: 0;
+    }
+}
+
+
+@media (min-width:1500px){
+    .app{
+        width: 70%;
+    }
+}
+
+@media (max-width:500px){
+    .app{
+        padding: .5rem;
+    }
+}

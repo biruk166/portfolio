@@ -1,1 +1,24 @@
+:root{
+ --fontFamily: 'Oxanium', Times;
+  --bgColor: #131E3A;
+  --orangeColor: #EE5522;
+  --whiteColor: white;
+  --cardColor: linear-gradient(120deg, rgba(#131D74, #131D74, #8083a0, 40%),
+                                       rgba(#131D74, #e1e2ee, #131D74, 10%));
+ /* #131D74 */
+  --borderRadiusBig: 1rem;
+  --borderRadiusSmall: .5rem;
 
+
+}
+html{
+    font-family:  'Oxanium', Times;
+}
+a{
+    color: var(--whiteColor);
+    text-decoration: none;
+}
+body{
+    background-color: var(--bgColor);
+    color: var(--whiteColor);
+}
